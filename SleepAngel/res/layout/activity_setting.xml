@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272530"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1F33" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="7dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:text="设置"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#494953"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="6dp"
+                    android:text="更新设置"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="20" >
+
+                <TextView
+                    android:id="@+id/tv_check_for_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="17"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:text="检查更新"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_has_new"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/new_version"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="20" >
+
+                <TextView
+                    android:id="@+id/tv_wifi_auto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="17"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:text="WIFI下自动更新"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/tb_wifi"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#494953"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="6dp"
+                    android:text="定时设置"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#494953"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="6dp"
+                    android:text="意见反馈"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp" >
+
+                <ImageView
+                    android:id="@+id/iv_feedback_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/qq" />
+
+                <ImageView
+                    android:id="@+id/iv_feedback_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/wechat" />
+
+                <ImageView
+                    android:id="@+id/iv_feedback_weibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/weibo" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

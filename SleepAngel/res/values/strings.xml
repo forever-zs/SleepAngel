@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">星空之下</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="exit"><u>退出</u></string>
+    
+    
+
+</resources>

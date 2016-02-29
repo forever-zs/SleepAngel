@@ -1,0 +1,11 @@
+ddms.logcat.automonitor.userprompt=true
+eclipse.preferences.version=1
+logcat.view.colsize.Application=156
+logcat.view.colsize.Level=30
+logcat.view.colsize.PID=58
+logcat.view.colsize.TID=58
+logcat.view.colsize.Tag=119
+logcat.view.colsize.Text=613
+logcat.view.colsize.Time=150
+logcat.view.filters.list=name\: 'System.out.println', tag\: 'System.out', text\: '', pid\: '', app\: '', level\: 'verbose', 
+logcat.view.font=1|Monaco|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Monaco;
